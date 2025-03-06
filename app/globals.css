@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Vibrant primary colors */
+    --primary: 0 100% 60%; /* Red */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    /* Additional vibrant colors */
+    --yellow: 60 100% 50%;
+    --blue: 210 100% 50%;
+    --green: 120 100% 40%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-red-yellow {
+  background-image: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--yellow)));
+}
+
+.gradient-text-blue-green {
+  background-image: linear-gradient(45deg, hsl(var(--blue)), hsl(var(--green)));
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--yellow)), hsl(var(--blue)), hsl(var(--green)));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.glow {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.3), 0 0 45px rgba(0, 0, 255, 0.2), 0 0 60px
+    rgba(0, 255, 0, 0.1);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.3), 0 0 45px rgba(0, 0, 255, 0.2), 0 0 60px
+    rgba(0, 255, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+

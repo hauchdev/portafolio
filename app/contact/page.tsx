@@ -80,7 +80,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 mt-0.5 text-vibrant-red" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-sm text-muted-foreground">hauch@neocraftmc.net</p>
+                      <p className="text-sm text-muted-foreground">contact@hauch.dev</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

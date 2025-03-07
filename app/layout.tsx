@@ -6,11 +6,10 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Hauch - Desarrollador",
+  title: "Hauch - Programador",
   description:
-    "Portafolio de Hauch, un desarrollador apasionado especializado en desarrollo web, desarrollo de videojuegos y programación en Java.",
-    generator: 'v0.dev'
-}
+    "Soy Hauch, un programador apasionado especializado en desarrollo web, desarrollo de videojuegos y programación en Java."
+  }
 
 export default function RootLayout({
   children,

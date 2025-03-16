@@ -282,6 +282,41 @@ export default function AboutPage() {
             </div>
           </section>
         </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-muted/30 to-background pointer-events-none"></div>
+            <div className="container px-4 md:px-6 relative z-10">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gradient gradient-text-blue-green">
+                    Experiencia en Minecraft
+                  </h2>
+                  <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Mi trayectoria como configurador y programador de servidores Minecraft
+                  </p>
+                </div>
+              </div>
+              <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-2">
+                <div className="flex flex-col space-y-2 p-6 rounded-xl bg-secondary/30 backdrop-blur-sm border border-white/5 hover:border-vibrant-yellow/30 transition-all duration-300 hover-glow">
+                  <h3 className="text-xl font-bold text-vibrant-yellow">Configuración de Servidores</h3>
+                  <ul className="space-y-1 text-muted-foreground">
+                    <li>Optimización de rendimiento</li>
+                    <li>Configuración de permisos y grupos</li>
+                    <li>Instalación y configuración de plugins</li>
+                    <li>Solución de problemas y compatibilidad</li>
+                    <li>Seguridad y respaldos automáticos</li>
+                  </ul>
+                </div>
+                <div className="flex flex-col space-y-2 p-6 rounded-xl bg-secondary/30 backdrop-blur-sm border border-white/5 hover:border-vibrant-blue/30 transition-all duration-300 hover-glow">
+                  <h3 className="text-xl font-bold text-vibrant-blue">Proyectos Destacados</h3>
+                  <ul className="space-y-1 text-muted-foreground">
+                    <li>OceanMC Network</li>
+                    <li>Modalidades de supervivencia mejorada</li>
+                    <li>Sistemas de rangos y progresión</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted/30">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">

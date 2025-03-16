@@ -50,7 +50,7 @@ export default function PreciosPage() {
 
   const serviciosWeb = [
     {
-      nombre: "Landing Page",
+      nombre: "Sitio Web Básico",
       precio: "10€",
       descripcion: "Página web simple para presentar tu negocio o proyecto",
       caracteristicas: [
@@ -62,7 +62,7 @@ export default function PreciosPage() {
       color: "red",
     },
     {
-      nombre: "Sitio Web Completo",
+      nombre: "Sitio Web Estándar",
       precio: "25€",
       descripcion: "Sitio web profesional con múltiples páginas y funcionalidades",
       caracteristicas: [
@@ -77,7 +77,7 @@ export default function PreciosPage() {
       color: "yellow",
     },
     {
-      nombre: "E-commerce",
+      nombre: "Sitio Web Premium",
       precio: "35€",
       descripcion: "Sitio web profesional con múltiples páginas y funcionalidades avanzadas",
       caracteristicas: [

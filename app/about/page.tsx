@@ -34,8 +34,14 @@ export default function AboutPage() {
                 Blog
               </Link>
               <Link
-                href="/contact"
+                href="/precios"
                 className="flex items-center text-lg font-medium transition-colors hover:text-vibrant-red"
+              >
+                Precios
+              </Link>
+              <Link
+                href="/contact"
+                className="flex items-center text-lg font-medium transition-colors hover:text-vibrant-yellow"
               >
                 Contacto
               </Link>
@@ -60,20 +66,18 @@ export default function AboutPage() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gradient gradient-text-blue-green">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gradient gradient-text-red-yellow animated-text">
                     Sobre Mí
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Soy <span className="text-vibrant-red">Hauch</span>, un desarrollador apasionado con experiencia en
+                    Soy <span className="text-gradient gradient-text-red-yellow animated-text">Hauch</span>, un desarrollador apasionado con experiencia en
                     desarrollo web, desarrollo de videojuegos y programación en Java.
                   </p>
                 </div>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
                     Con más de 5 años de experiencia en la industria tecnológica, he trabajado en una variedad de
-                    proyectos, desde pequeños sitios web hasta aplicaciones empresariales a gran escala. Mi pasión por
-                    la programación comenzó cuando era adolescente, y he estado perfeccionando mis habilidades desde
-                    entonces.
+                    proyectos, desde pequeños sitios web hasta aplicaciones empresariales a gran escala.
                   </p>
                   <p>
                     Me especializo en crear aplicaciones web responsivas, desarrollar videojuegos atractivos y construir
@@ -93,8 +97,8 @@ export default function AboutPage() {
                     </Button>
                   </Link>
                   <Link href="/projects">
-                    <Button variant="outline" className="gradient-border hover-glow">
-                      Ver Mi Trabajo
+                    <Button variant="outline" className="gradient-border hover-glow animated-button">
+                      <span className="text-gradient gradient-text-red-yellow animated-text">Ver Mi Trabajo</span>
                     </Button>
                   </Link>
                 </div>
@@ -242,6 +246,41 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          <section className="w-full py-12 md:py-24 lg:py-32 relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-muted/30 to-background pointer-events-none"></div>
+            <div className="container px-4 md:px-6 relative z-10">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gradient gradient-text-blue-green">
+                    Experiencia en Minecraft
+                  </h2>
+                  <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Mi trayectoria como configurador y programador de servidores Minecraft
+                  </p>
+                </div>
+              </div>
+              <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-2">
+                <div className="flex flex-col space-y-2 p-6 rounded-xl bg-secondary/30 backdrop-blur-sm border border-white/5 hover:border-vibrant-yellow/30 transition-all duration-300 hover-glow">
+                  <h3 className="text-xl font-bold text-vibrant-yellow">Configuración de Servidores</h3>
+                  <ul className="space-y-1 text-muted-foreground">
+                    <li>Optimización de rendimiento</li>
+                    <li>Configuración de permisos y grupos</li>
+                    <li>Instalación y configuración de plugins</li>
+                    <li>Solución de problemas y compatibilidad</li>
+                    <li>Seguridad y respaldos automáticos</li>
+                  </ul>
+                </div>
+                <div className="flex flex-col space-y-2 p-6 rounded-xl bg-secondary/30 backdrop-blur-sm border border-white/5 hover:border-vibrant-blue/30 transition-all duration-300 hover-glow">
+                  <h3 className="text-xl font-bold text-vibrant-blue">Proyectos Destacados</h3>
+                  <ul className="space-y-1 text-muted-foreground">
+                    <li>OceanMC Network</li>
+                    <li>Modalidades de supervivencia mejorada</li>
+                    <li>Sistemas de rangos y progresión</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted/30">
           <div className="container px-4 md:px-6">
@@ -265,6 +304,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
       </main>
       <footer className="w-full border-t border-white/10 py-6 bg-background">
         <div className="container flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
@@ -285,7 +325,10 @@ export default function AboutPage() {
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-vibrant-blue transition-colors">
               Blog
             </Link>
-            <Link href="/contact" className="text-sm text-muted-foreground hover:text-vibrant-green transition-colors">
+            <Link href="/precios" className="text-sm text-muted-foreground hover:text-vibrant-green transition-colors">
+              Precios
+            </Link>
+            <Link href="/contact" className="text-sm text-muted-foreground hover:text-vibrant-red transition-colors">
               Contacto
             </Link>
           </div>

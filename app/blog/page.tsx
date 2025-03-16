@@ -45,8 +45,14 @@ export default function BlogPage() {
                 Blog
               </Link>
               <Link
-                href="/contact"
+                href="/precios"
                 className="flex items-center text-lg font-medium transition-colors hover:text-vibrant-red"
+              >
+                Precios
+              </Link>
+              <Link
+                href="/contact"
+                className="flex items-center text-lg font-medium transition-colors hover:text-vibrant-yellow"
               >
                 Contacto
               </Link>
@@ -128,7 +134,10 @@ export default function BlogPage() {
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-vibrant-blue transition-colors">
               Blog
             </Link>
-            <Link href="/contact" className="text-sm text-muted-foreground hover:text-vibrant-green transition-colors">
+            <Link href="/precios" className="text-sm text-muted-foreground hover:text-vibrant-green transition-colors">
+              Precios
+            </Link>
+            <Link href="/contact" className="text-sm text-muted-foreground hover:text-vibrant-red transition-colors">
               Contacto
             </Link>
           </div>
